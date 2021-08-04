@@ -7,6 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Кино Innopolis</title>
     <style>
+        .movie-table {
+            width: 849px;
+            border-radius: 10px;
+            border-collapse: collapse;
+            overflow: hidden;
+        }
+        .movie-table__head {
+            background: #A3CC40;
+            height: 45px;
+        }
+        .movie-table__body-row-1 {
+            background: #373737;
+            height: 45px;
+        }
+        .movie-table__body-row-2 {
+            background: #4C4D4F;
+            height: 45px;
+        }
+        .movie-table__head-cell {
+            color: white;
+            text-align: left;
+        }
+        .movie-table__body-cell {
+            color: white;
+        }
+        .movie-table__body-col {
+            text-align: center;
+        }
         .title2 {
             color: #A3CC40;
             font-size: 48px;
@@ -131,51 +159,51 @@
         <a name="schedule">
             <h2 class="title2">Выберите фильм</h2>
         </a>
-        <table style="width: 849; border-radius: 20px;">
+        <table class="movie-table">
             <colgroup>
-                <col style="width: 7%;">
-                <col style="width: 31%;">
-                <col style="width: 31%;">
-                <col style="width: 31%;">
+                <col style="width: 9%;">
+                <col style="width: 28.5%;">
+                <col style="width: 29%;">
+                <col style="width: 33.5%;">
             </colgroup>
-            <thead style="background: #A3CC40;">
-                <tr>
-                    <th style="color: white;"></th>
-                    <th style="color: white;">Начало сеанса</th>
-                    <th style="color: white;">Название фильма</th>
-                    <th style="color: white;">Жанр</th>
+            <thead class="movie-table__head">
+                <tr class="movie-table__head-row">
+                    <th class="movie-table__head-cell"></th>
+                    <th class="movie-table__head-cell">Начало сеанса</th>
+                    <th class="movie-table__head-cell">Название фильма</th>
+                    <th class="movie-table__head-cell">Жанр</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr style="background: #373737;">
-                    <td><img src="./images/mark.svg" alt="check mark"></td>
-                    <td style="color: white;">10:00</td>
-                    <td style="color: white;">Человек-паук</td>
-                    <td style="color: white;">Фантастика, боевик, приключения</td>
+            <tbody class="movie-table__body">
+                <tr class="movie-table__body-row-1">
+                    <td class="movie-table__body-col"><img src="./images/mark.svg" alt="check mark"></td>
+                    <td class="movie-table__body-cell">10:00</td>
+                    <td class="movie-table__body-cell">Человек-паук</td>
+                    <td class="movie-table__body-cell">Фантастика, боевик, приключения</td>
                 </tr>
-                <tr style="background: #4C4D4F;">
-                    <td style="color: white;"><img src="./images/mark.svg" alt="check mark"></td>
-                    <td style="color: white;">12:00</td>
-                    <td style="color: white;">Собачья жизнь 2</td>
-                    <td style="color: white;">Фэнтэзи, драма, комедия</td>
+                <tr class="movie-table__body-row-2">
+                    <td class="movie-table__body-col"><img src="./images/mark.svg" alt="check mark"></td>
+                    <td class="movie-table__body-cell">12:00</td>
+                    <td class="movie-table__body-cell">Собачья жизнь 2</td>
+                    <td class="movie-table__body-cell">Фэнтэзи, драма, комедия</td>
                 </tr>
-                <tr style="background: #373737;">
-                    <td><img src="./images/mark.svg" alt="check mark"></td>
-                    <td style="color: white;">14:00</td>
-                    <td style="color: white;">История игрушек 4</td>
-                    <td style="color: white;">Мультфильм, фэнтэзи, комедия</td>
+                <tr class="movie-table__body-row-1">
+                    <td class="movie-table__body-col"><img src="./images/mark.svg" alt="check mark"></td>
+                    <td class="movie-table__body-cell">14:00</td>
+                    <td class="movie-table__body-cell">История игрушек 4</td>
+                    <td class="movie-table__body-cell">Мультфильм, фэнтэзи, комедия</td>
                 </tr>
-                <tr style="background: #4C4D4F;">
-                    <td><img src="./images/mark.svg" alt="check mark"></td>
-                    <td style="color: white;">16:00</td>
-                    <td style="color: white;">Люди в чёрном: Интэрнэшнл</td>
-                    <td style="color: white;">Фантастика, боевик, комедия</td>
+                <tr class="movie-table__body-row-2">
+                    <td class="movie-table__body-col"><img src="./images/mark.svg" alt="check mark"></td>
+                    <td class="movie-table__body-cell">16:00</td>
+                    <td class="movie-table__body-cell">Люди в чёрном: Интэрнэшнл</td>
+                    <td class="movie-table__body-cell">Фантастика, боевик, комедия</td>
                 </tr>
             </tbody>
         </table>
-        <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam officiis reiciendis eligendi assumenda, veritatis magnam, minima repudiandae quia iste fugiat eum dolor, odio ducimus repellat dicta corrupti reprehenderit eos numquam?
-        </div>
+        <p style="text-align: center; font-size: 11px;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quos quam ea. Voluptates ipsam cupiditate id ut iure, eius dolore, inventore labore debitis alias neque, deserunt impedit officiis! Quae, quaerat?
+        </p>
     </section>
 
     <section id="promo" style="position: relative; background-image: url(./images/cinema_staf.png); background-repeat: no-repeat; background-size: cover; height: 685px;">
