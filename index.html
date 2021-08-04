@@ -421,10 +421,13 @@
             <form action="/order" id="feedback-form">
                 <h3 class="title3">Обратная связь</h3>
                 <div>
-                    <input type="text" placeholder="Полное имя" name="fullname">
+                    <input type="text" placeholder="Полное имя" name="fullname" required>
                 </div>
                 <div>
-                    <select name="seat">
+                    <input type="email" name="mail" id="mail" placeholder="email" required>
+                </div>
+                <div>
+                    <select name="seat" required>
                         <option value="0">Номер места</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -439,10 +442,13 @@
                     </select>
                 </div>
                 <div>
-                    <input type="textarea" placeholder="Напишите свой отзыв" name="feed" style="height: 120px;">
+                    <input type="textarea" placeholder="Напишите свой отзыв" name="feed" required style="height: 120px;">
                 </div>
                 <div>
-                    <input type="checkbox" name="agree" id="checkbox">
+                    <input type="file" name="input file" id="input-file">
+                </div>
+                <div>
+                    <input type="checkbox" name="agree" id="checkbox" required>
                     <label for="checkbox">Я согласен на обработку персональных данных</label>
                 </div>
                 <div>
