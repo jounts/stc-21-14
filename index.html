@@ -7,6 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Кино Innopolis</title>
     <style>
+        .feedback-form-block {
+            background: url(./images/gradient.png), url(./images/cinema_hall.jpg), #ffffff;
+            background-repeat: no-repeat, no-repeat;
+            background-position: 27px, left;
+            border-radius: 20px;
+        }
         .movie-table {
             width: 849px;
             border-radius: 10px;
@@ -422,10 +428,10 @@
         </div>
     </section>
 
-    <section id="form">
-        <div style="background-image: url(./images/cinema_hall.jpg); width: 767px;">
-            <form action="/order" id="feedback-form">
-                <h3 class="title3">Обратная связь</h3>
+    <section id="form" style="padding-left: 174px; padding-right: 174px;">
+        <div class="feedback-form-block">
+            <form action="/order" id="feedback-form" style="padding-left: 381px;">
+                <h3 class="title3" style="text-align: center;">Обратная связь</h3>
                 <div>
                     <input type="text" placeholder="Полное имя" name="fullname" required>
                 </div>
