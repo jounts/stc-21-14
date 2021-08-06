@@ -47,6 +47,9 @@
         .site-list__item {
             list-style-type: none;
         }
+        .nav-item {
+            display: inline;
+        }
         .title2 {
             color: #A3CC40;
             font-size: 48px;
@@ -57,17 +60,43 @@
 <body style="width: 1171px;">
     <header style="background-image: url(./images/main_cinema_hall.jpg); background-repeat: no-repeat; position: relative; height: 728px;"> 
         <nav>
-            <a href="https://innopolis.university/" target="_blank"><img src="./images/logo.svg" alt="Logo Innopolis University"></a>
-            <a href="tel:+78003551256">+7 (800) 355 12 56</a>
-            <a href="mailto:kino@innopolis.ru">kino@innopolis.ru</a>
-            <span>ул. Спортивная д.1</span>
-            <button>Заказать звонок</button>
-            <div class="language">RU</div>
-            <a href="#about">Почему мы</a>
-            <a href="#schedule">Расписание</a>
-            <a href="#goods">Наши товары</a>
-            <a href="#feedback">Отзывы</a>
-            <a href="#contact">Контакты</a>
+            <ul class="site-list">
+                <li class="site-list__item nav-item">
+                    <a href="https://innopolis.university/" target="_blank"><img src="./images/logo.svg" alt="Logo Innopolis University"></a>
+                </li>
+                <li class="site-list__item nav-item">
+                    <a href="tel:+78003551256">+7 (800) 355 12 56</a>
+                </li>
+                <li class="site-list__item nav-item">
+                    <a href="mailto:kino@innopolis.ru">kino@innopolis.ru</a>
+                </li>
+                <li class="site-list__item nav-item">
+                    <p>ул. Спортивная д.1</p>
+                </li>
+                <li class="site-list__item nav-item">
+                    <button>Заказать звонок</button>
+                </li>
+                <li class="site-list__item nav-item">
+                    <div class="language">RU</div>
+                </li>
+            </ul>
+            <ul class="site-list">
+                <li class="site-list__item nav-item">
+                    <a href="#about">Почему мы</a>
+                </li>
+                <li class="site-list__item nav-item">
+                    <a href="#schedule">Расписание</a>
+                </li>
+                <li class="site-list__item nav-item">
+                    <a href="#goods">Наши товары</a>
+                </li>
+                <li class="site-list__item nav-item">
+                    <a href="#feedback">Отзывы</a>
+                </li>
+                <li class="site-list__item nav-item">
+                    <a href="#contact">Контакты</a>
+                </li>
+            </ul>
         </nav>
 
         <h1 style="color: white;">Закажите билет в кино</h1>
