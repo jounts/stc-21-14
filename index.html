@@ -204,23 +204,33 @@
           <h2 class="title2">Выберите фильм</h2>
         </a>
         <table class="movie-table">
-          <colgroup>
-            <col style="width: 9%" />
-            <col style="width: 28.5%" />
-            <col style="width: 29%" />
-            <col style="width: 33.5%" />
-          </colgroup>
           <thead class="movie-table__head">
             <tr class="movie-table__head-row">
-              <th class="movie-table__head-cell"></th>
-              <th class="movie-table__head-cell">Начало сеанса</th>
-              <th class="movie-table__head-cell">Название фильма</th>
-              <th class="movie-table__head-cell">Жанр</th>
+              <th class="movie-table__head-cell movie-table__col1"></th>
+              <th class="movie-table__head-cell movie-table__col2">
+                <a class="movie-table__link" href="#shedule"
+                  >Начало сеанса<img
+                    class="movie-table__arrow"
+                    src="./images/arrow.png"
+                    alt="arrow"
+                /></a>
+              </th>
+              <th class="movie-table__head-cell movie-table__col3">
+                <a class="movie-table__link" href="#shedule">
+                  Название фильма
+                  <img
+                    class="movie-table__arrow2"
+                    src="./images/arrow.png"
+                    alt="arrow"
+                  />
+                </a>
+              </th>
+              <th class="movie-table__head-cell movie-table__col4">Жанр</th>
             </tr>
           </thead>
           <tbody class="movie-table__body">
             <tr class="movie-table__body-row-1">
-              <td class="movie-table__body-col">
+              <td class="movie-table__body-cell first-cell">
                 <img src="./images/mark.svg" alt="check mark" />
               </td>
               <td class="movie-table__body-cell">10:00</td>
@@ -230,7 +240,7 @@
               </td>
             </tr>
             <tr class="movie-table__body-row-2">
-              <td class="movie-table__body-col">
+              <td class="movie-table__body-cell first-cell">
                 <img src="./images/mark.svg" alt="check mark" />
               </td>
               <td class="movie-table__body-cell">12:00</td>
@@ -238,7 +248,7 @@
               <td class="movie-table__body-cell">Фэнтэзи, драма, комедия</td>
             </tr>
             <tr class="movie-table__body-row-1">
-              <td class="movie-table__body-col">
+              <td class="movie-table__body-cell first-cell">
                 <img src="./images/mark.svg" alt="check mark" />
               </td>
               <td class="movie-table__body-cell">14:00</td>
@@ -248,7 +258,7 @@
               </td>
             </tr>
             <tr class="movie-table__body-row-2">
-              <td class="movie-table__body-col">
+              <td class="movie-table__body-cell first-cell">
                 <img src="./images/mark.svg" alt="check mark" />
               </td>
               <td class="movie-table__body-cell">16:00</td>
@@ -267,19 +277,11 @@
         </p>
       </section>
 
-      <section
-        class="promo"
-        style="
-          background-image: url(./images/cinema_staf.png);
-          background-repeat: no-repeat;
-          background-size: cover;
-          height: 685px;
-        "
-      >
+      <section class="promo">
         <img
           src="./images/present.png"
           alt="Коробка с подарком"
-          style="border-radius: 138px; float: left;"
+          style="border-radius: 138px; float: left"
         />
 
         <div>
