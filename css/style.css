@@ -98,6 +98,15 @@ body {
   line-height: 1.29;
 }
 
+.section-title {
+  color: #a3cc40;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-left: 135px;
+  text-align: left;
+}
+
 .wellcome-block {
   position: absolute;
   box-sizing: border-box;
@@ -125,12 +134,39 @@ body {
     line-height: 1.3;
 }
 
-.section-title {
-  color: #a3cc40;
-  font-size: 48px;
-  font-weight: 500;
-  line-height: 1.3;
-  margin-left: 135px;
+.about {
+}
+
+.about-container {
+    overflow: hidden;
+    margin: 0 auto 29px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about__item {
+    width: 245px;
+    margin: 0 27.5px 29px 27.5px;
+}
+
+.about__item-img{
+    width: 245px;
+    height: 169px;
+}
+
+.about__item-title{
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+.about__item-article{
+    text-align: center;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 1.3;
 }
 
 .schedule {
