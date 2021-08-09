@@ -7,12 +7,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Кино Innopolis</title>
     <style>
+        /* Подключение шрифтов с помощью сервиса Google Fonts
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;400;500;600;700&display=swap');
+        */
+
+        @font-face {
+            font-family: 'IBM Plex Sans';
+            src: url(./fonts/IBMPlexSans-Thin.ttf);
+            font-style: normal;
+            font-weight: 100;
+        }
+
+        @font-face {
+            font-family: 'IBM Plex Sans';
+            src: url(./fonts/IBMPlexSans-Regular.ttf);
+            font-style: normal;
+            font-weight: 400;
+        }
+
+        @font-face {
+            font-family: 'IBM Plex Sans';
+            src: url(./fonts/IBMPlexSans-Medium.ttf);
+            font-style: normal;
+            font-weight: 500;
+        }
+
+        @font-face {
+            font-family: 'IBM Plex Sans';
+            src: url(./fonts/IBMPlexSans-SemiBold.ttf);
+            font-style: normal;
+            font-weight: 600;
+        }
+
+        @font-face {
+            font-family: 'IBM Plex Sans';
+            src: url(./fonts/IBMPlexSans-Bold.ttf);
+            font-style: normal;
+            font-weight: 700;
+        }
+
+        * {
+            font-family: 'IBM Plex Sans', sans-serif;
+        }
+
         .feedback-form-block {
             background: url(./images/gradient.png), url(./images/cinema_hall.jpg), #ffffff;
             background-repeat: no-repeat, no-repeat;
             background-position: 27px, left;
             border-radius: 20px;
         }
+
         .movie-table {
             width: 849px;
             border-radius: 10px;
@@ -21,45 +65,56 @@
             margin-left: auto;
             margin-right: auto;
         }
+
         .movie-table__head {
             background: #A3CC40;
             height: 45px;
         }
+
         .movie-table__body-row-1 {
             background: #373737;
             height: 45px;
         }
+
         .movie-table__body-row-2 {
             background: #4C4D4F;
             height: 45px;
         }
+
         .movie-table__head-cell {
             color: white;
             text-align: left;
         }
+
         .movie-table__body-cell {
             color: white;
         }
+
         .movie-table__body-col {
             text-align: center;
         }
+
         .site-list {
             padding-left: 0;
         }
+
         .site-list__item {
             list-style-type: none;
             font-size: 12px;
             font-weight: 500;
             color: #ffffff;
         }
+
         .nav-item {
             display: inline;
         }
+
         .nav-links {
             font-size: 12px;
             font-weight: 500;
             color: #ffffff;
         }
+        
         .title2 {
             color: #A3CC40;
             font-size: 48px;
