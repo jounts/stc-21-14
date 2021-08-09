@@ -1,503 +1,799 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Кино Innopolis</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<body>
-    <header style="background-image: url(./images/main_cinema_hall.jpg); background-repeat: no-repeat; position: relative; height: 728px;"> 
+  <body>
+    <div class="main-container">
+      <header class="header">
         <nav class="nav">
-            <ul class="site-list">
-                <li class="site-list__item nav-item">
-                    <a class="nav-links" href="https://innopolis.university/" target="_blank"><img src="./images/logo.svg" alt="Logo Innopolis University"></a>
-                </li>
-                <li class="site-list__item nav-item">
-                    <a class="nav-links" href="tel:+78003551256">+7 (800) 355 12 56</a>
-                </li>
-                <li class="site-list__item nav-item">
-                    <a class="nav-links" href="mailto:kino@innopolis.ru">kino@innopolis.ru</a>
-                </li>
-                <li class="site-list__item nav-item">
-                    ул. Спортивная д.1
-                </li>
-                <li class="site-list__item nav-item">
-                    <button style="background: white; border-radius: 6px;"><img src="./images/call_button.png" alt="call button"></button>
-                </li>
-                <li class="site-list__item nav-item">
-                    <select name="language" id="lng-select">
-                        <option value="RU">RU</option>
-                        <option value="EN">EN</option>
-                    </select>
-                </li>
-            </ul>
-            <ul class="site-list">
-                <li class="site-list__item nav-item">
-                    <a class="nav-links" href="#about">Почему мы</a>
-                </li>
-                <li class="site-list__item nav-item">
-                    <a class="nav-links" href="#schedule">Расписание</a>
-                </li>
-                <li class="site-list__item nav-item">
-                    <a class="nav-links" href="#goods">Наши товары</a>
-                </li>
-                <li class="site-list__item nav-item">
-                    <a class="nav-links" href="#feedback">Отзывы</a>
-                </li>
-                <li class="site-list__item nav-item">
-                    <a class="nav-links" href="#contact">Контакты</a>
-                </li>
-            </ul>
+          <ul class="site-list">
+            <li class="site-list__item nav-item">
+              <a
+                class="nav-links"
+                href="https://innopolis.university/"
+                target="_blank"
+                ><img src="./images/logo.svg" alt="Logo Innopolis University"
+              /></a>
+            </li>
+            <li class="site-list__item nav-item">
+              <a class="nav-links" href="tel:+78003551256"
+                >+7 (800) 355 12 56</a
+              >
+            </li>
+            <li class="site-list__item nav-item">
+              <a class="nav-links" href="mailto:kino@innopolis.ru"
+                >kino@innopolis.ru</a
+              >
+            </li>
+            <li class="site-list__item nav-item">ул. Спортивная д.1</li>
+            <li class="site-list__item nav-item">
+              <button style="background: white; border-radius: 6px">
+                <img src="./images/call_button.png" alt="call button" />
+              </button>
+            </li>
+            <li class="site-list__item nav-item">
+              <select name="language" id="lng-select">
+                <option value="RU">RU</option>
+                <option value="EN">EN</option>
+              </select>
+            </li>
+          </ul>
+          <ul class="site-list">
+            <li class="site-list__item nav-item">
+              <a class="nav-links" href="#about">Почему мы</a>
+            </li>
+            <li class="site-list__item nav-item">
+              <a class="nav-links" href="#schedule">Расписание</a>
+            </li>
+            <li class="site-list__item nav-item">
+              <a class="nav-links" href="#goods">Наши товары</a>
+            </li>
+            <li class="site-list__item nav-item">
+              <a class="nav-links" href="#feedback">Отзывы</a>
+            </li>
+            <li class="site-list__item nav-item">
+              <a class="nav-links" href="#contact">Контакты</a>
+            </li>
+          </ul>
         </nav>
 
-        <h1 style="color: white;">Закажите билет в кино</h1>
-        <h2 class="title1" style="color: white;">Всем покупателям подарок!</h2>
+        <h1 class="header-title h1">Закажите билет в кино</h1>
+        <h2 class="header-title h2">Всем покупателям подарок!</h2>
 
-        <div class="wellcome" style="position:absolute; left: 563px; top: 564px; background: white; width: 426px; border-radius: 20px;">
-            <h3 style="height: 33px;">Добро пожаловать!</h3>
+        <div class="header-wellcome">
+          <h3 style="height: 33px">Добро пожаловать!</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint autem
+            nam enim odit quod adipisci officia similique dicta laboriosam
+            nesciunt, doloremque reiciendis inventore voluptatum architecto
+            quibusdam cum expedita modi non?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            voluptatum repudiandae ipsam odio ab autem quaerat vitae blanditiis
+            minus iste architecto sunt nihil praesentium facilis nobis dicta,
+            quae dolores delectus.
+          </p>
+        </div>
+      </header>
+
+      <section class="about">
+        <div style="overflow: hidden">
+          <a name="about">
+            <h2 class="title2">Почему мы?</h2>
+          </a>
+          <div
+            style="
+              display: inline-block;
+              width: 245px;
+              height: 422px;
+              vertical-align: top;
+            "
+          >
+            <img src="./images/screen.png" alt="'Экран кинотеатра" />
+            <h4>Большие экраны</h4>
             <div>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.   
-                    Sint autem nam enim odit quod adipisci officia similique
-                    dicta laboriosam nesciunt, doloremque reiciendis inventore
-                    voluptatum architecto quibusdam cum expedita modi non?
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Impedit voluptatum repudiandae ipsam odio ab autem quaerat
-                    vitae blanditiis minus iste architecto sunt nihil praesentium
-                    facilis nobis dicta, quae dolores delectus.
-                </p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet
+              officiis nobis laboriosam minus? Alias, ipsam? Error adipisci
+              atque obcaecati et nesciunt? Dolore nostrum dolorem deleniti
+              magnam, culpa minima inventore quasi.
             </div>
+          </div>
+
+          <div
+            style="
+              display: inline-block;
+              width: 245px;
+              height: 422px;
+              vertical-align: top;
+            "
+          >
+            <img src="./images/sound.png" alt="Звук кинотеатра" />
+            <h4>Объёмный звук</h4>
+            <div>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit amet ipsum debitis? Aliquid consectetur reiciendis
+              fugiat sunt quos alias, deleniti, excepturi saepe placeat maiores
+              pariatur harum voluptatibus. Facere, qui voluptatibus.
+            </div>
+          </div>
+
+          <div
+            style="
+              display: inline-block;
+              width: 245px;
+              height: 422px;
+              vertical-align: top;
+            "
+          >
+            <img src="./images/chairs.png" alt="Кресла кинотеатра" />
+            <h4>Удобные кресла</h4>
+            <div>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
+              corrupti iure deleniti, rerum commodi iusto vel exercitationem
+              consequuntur debitis consectetur voluptatem accusamus. Quasi, ex
+              consequatur dolore eius doloremque quia similique.
+            </div>
+          </div>
         </div>
-    </header>
-
-    <section class="about">
-        <div style="overflow: hidden;"></div>
-            <a name="about">
-                <h2 class="title2">Почему мы?</h2>
-            </a>
-            <div style="display: inline-block; width: 245px; height: 422px; vertical-align: top;">
-                <img src="./images/screen.png" alt="'Экран кинотеатра">
-                <h4>Большие экраны</h4>
-                <div>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Eveniet officiis nobis laboriosam minus? Alias, ipsam?
-                    Error adipisci atque obcaecati et nesciunt?
-                    Dolore nostrum dolorem deleniti magnam, culpa minima inventore quasi.
-                </div>
+        <div style="overflow: hidden">
+          <div
+            style="
+              display: inline-block;
+              width: 245px;
+              height: 422px;
+              vertical-align: top;
+            "
+          >
+            <img src="./images/atmosphere.png" alt="Атмосфера кинотеатра" />
+            <h4>Уютная атмосфера</h4>
+            <div>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam id
+              rerum repellendus ducimus, ad in numquam iusto nostrum adipisci.
+              Nesciunt ab quos saepe nemo iste libero accusantium dignissimos
+              assumenda quas.
             </div>
+          </div>
 
-            <div style="display: inline-block; width: 245px; height: 422px; vertical-align: top;">
-                <img src="./images/sound.png" alt="Звук кинотеатра">
-                <h4>Объёмный звук</h4>
-                <div>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Reprehenderit amet ipsum debitis? Aliquid consectetur
-                    reiciendis fugiat sunt quos alias, deleniti,
-                    excepturi saepe placeat maiores pariatur harum voluptatibus.
-                    Facere, qui voluptatibus.
-                </div>
+          <div
+            style="
+              display: inline-block;
+              width: 245px;
+              height: 422px;
+              vertical-align: top;
+            "
+          >
+            <img src="./images/diving.png" alt="Технологии кинотеатра" />
+            <h4>Полное погружение</h4>
+            <div>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias
+              voluptatum dolore vitae, eius qui maxime deserunt, possimus
+              cupiditate omnis debitis illo iste fugit quisquam! Voluptas
+              asperiores nulla odio accusantium quae.
             </div>
+          </div>
 
-            <div style="display: inline-block; width: 245px; height: 422px; vertical-align: top;">
-                <img src="./images/chairs.png" alt="Кресла кинотеатра">
-                <h4>Удобные кресла</h4>
-                <div>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Qui corrupti iure deleniti, rerum commodi iusto vel exercitationem
-                    consequuntur debitis consectetur voluptatem accusamus.
-                    Quasi, ex consequatur dolore eius doloremque quia similique.
-                </div>
+          <div
+            style="
+              display: inline-block;
+              width: 245px;
+              height: 422px;
+              vertical-align: top;
+            "
+          >
+            <img src="./images/kisses.png" alt="Поцелуи в кинотеатре" />
+            <h4>Поцелуи на заднем ряду</h4>
+            <div>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
+              quasi eaque accusamus impedit excepturi, pariatur unde, suscipit
+              ullam laudantium id repellat nesciunt explicabo doloremque
+              assumenda et? Sed facilis quo magni.
             </div>
+          </div>
         </div>
-        <div style="overflow: hidden;"></div>
-            <div style="display: inline-block; width: 245px; height: 422px; vertical-align: top;">
-                <img src="./images/atmosphere.png" alt="Атмосфера кинотеатра">
-                <h4>Уютная атмосфера</h4>
-                <div>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Magnam id rerum repellendus ducimus, ad in numquam iusto
-                    nostrum adipisci. Nesciunt ab quos saepe nemo iste libero
-                    accusantium dignissimos assumenda quas.
-                </div>
-            </div>
+      </section>
 
-            <div style="display: inline-block; width: 245px; height: 422px; vertical-align: top;">
-                <img src="./images/diving.png" alt="Технологии кинотеатра">
-                <h4>Полное погружение</h4>
-                <div>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Alias voluptatum dolore vitae, eius qui maxime deserunt,
-                    possimus cupiditate omnis debitis illo iste fugit quisquam!
-                    Voluptas asperiores nulla odio accusantium quae.
-                </div>
-            </div>
-
-            <div style="display: inline-block; width: 245px; height: 422px; vertical-align: top;">
-                <img src="./images/kisses.png" alt="Поцелуи в кинотеатре">
-                <h4>Поцелуи на заднем ряду</h4>
-                <div>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Delectus quasi eaque accusamus impedit excepturi, pariatur unde,
-                    suscipit ullam laudantium id repellat nesciunt explicabo
-                    doloremque assumenda et? Sed facilis quo magni.
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="schedule">
+      <section class="schedule">
         <a name="schedule">
-            <h2 class="title2">Выберите фильм</h2>
+          <h2 class="title2">Выберите фильм</h2>
         </a>
         <table class="movie-table">
-            <colgroup>
-                <col style="width: 9%;">
-                <col style="width: 28.5%;">
-                <col style="width: 29%;">
-                <col style="width: 33.5%;">
-            </colgroup>
-            <thead class="movie-table__head">
-                <tr class="movie-table__head-row">
-                    <th class="movie-table__head-cell"></th>
-                    <th class="movie-table__head-cell">Начало сеанса</th>
-                    <th class="movie-table__head-cell">Название фильма</th>
-                    <th class="movie-table__head-cell">Жанр</th>
-                </tr>
-            </thead>
-            <tbody class="movie-table__body">
-                <tr class="movie-table__body-row-1">
-                    <td class="movie-table__body-col"><img src="./images/mark.svg" alt="check mark"></td>
-                    <td class="movie-table__body-cell">10:00</td>
-                    <td class="movie-table__body-cell">Человек-паук</td>
-                    <td class="movie-table__body-cell">Фантастика, боевик, приключения</td>
-                </tr>
-                <tr class="movie-table__body-row-2">
-                    <td class="movie-table__body-col"><img src="./images/mark.svg" alt="check mark"></td>
-                    <td class="movie-table__body-cell">12:00</td>
-                    <td class="movie-table__body-cell">Собачья жизнь 2</td>
-                    <td class="movie-table__body-cell">Фэнтэзи, драма, комедия</td>
-                </tr>
-                <tr class="movie-table__body-row-1">
-                    <td class="movie-table__body-col"><img src="./images/mark.svg" alt="check mark"></td>
-                    <td class="movie-table__body-cell">14:00</td>
-                    <td class="movie-table__body-cell">История игрушек 4</td>
-                    <td class="movie-table__body-cell">Мультфильм, фэнтэзи, комедия</td>
-                </tr>
-                <tr class="movie-table__body-row-2">
-                    <td class="movie-table__body-col"><img src="./images/mark.svg" alt="check mark"></td>
-                    <td class="movie-table__body-cell">16:00</td>
-                    <td class="movie-table__body-cell">Люди в чёрном: Интэрнэшнл</td>
-                    <td class="movie-table__body-cell">Фантастика, боевик, комедия</td>
-                </tr>
-            </tbody>
+          <colgroup>
+            <col style="width: 9%" />
+            <col style="width: 28.5%" />
+            <col style="width: 29%" />
+            <col style="width: 33.5%" />
+          </colgroup>
+          <thead class="movie-table__head">
+            <tr class="movie-table__head-row">
+              <th class="movie-table__head-cell"></th>
+              <th class="movie-table__head-cell">Начало сеанса</th>
+              <th class="movie-table__head-cell">Название фильма</th>
+              <th class="movie-table__head-cell">Жанр</th>
+            </tr>
+          </thead>
+          <tbody class="movie-table__body">
+            <tr class="movie-table__body-row-1">
+              <td class="movie-table__body-col">
+                <img src="./images/mark.svg" alt="check mark" />
+              </td>
+              <td class="movie-table__body-cell">10:00</td>
+              <td class="movie-table__body-cell">Человек-паук</td>
+              <td class="movie-table__body-cell">
+                Фантастика, боевик, приключения
+              </td>
+            </tr>
+            <tr class="movie-table__body-row-2">
+              <td class="movie-table__body-col">
+                <img src="./images/mark.svg" alt="check mark" />
+              </td>
+              <td class="movie-table__body-cell">12:00</td>
+              <td class="movie-table__body-cell">Собачья жизнь 2</td>
+              <td class="movie-table__body-cell">Фэнтэзи, драма, комедия</td>
+            </tr>
+            <tr class="movie-table__body-row-1">
+              <td class="movie-table__body-col">
+                <img src="./images/mark.svg" alt="check mark" />
+              </td>
+              <td class="movie-table__body-cell">14:00</td>
+              <td class="movie-table__body-cell">История игрушек 4</td>
+              <td class="movie-table__body-cell">
+                Мультфильм, фэнтэзи, комедия
+              </td>
+            </tr>
+            <tr class="movie-table__body-row-2">
+              <td class="movie-table__body-col">
+                <img src="./images/mark.svg" alt="check mark" />
+              </td>
+              <td class="movie-table__body-cell">16:00</td>
+              <td class="movie-table__body-cell">Люди в чёрном: Интэрнэшнл</td>
+              <td class="movie-table__body-cell">
+                Фантастика, боевик, комедия
+              </td>
+            </tr>
+          </tbody>
         </table>
-        <p style="text-align: center; font-size: 11px;">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quos quam ea. Voluptates ipsam cupiditate id ut iure, eius dolore, inventore labore debitis alias neque, deserunt impedit officiis! Quae, quaerat?
+        <p style="text-align: center; font-size: 11px">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quos
+          quam ea. Voluptates ipsam cupiditate id ut iure, eius dolore,
+          inventore labore debitis alias neque, deserunt impedit officiis! Quae,
+          quaerat?
         </p>
-    </section>
+      </section>
 
-    <section class="promo" style="position: relative; background-image: url(./images/cinema_staf.png); background-repeat: no-repeat; background-size: cover; height: 685px;">
+      <section
+        class="promo"
+        style="
+          background-image: url(./images/cinema_staf.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 685px;
+        "
+      >
+        <img
+          src="./images/present.png"
+          alt="Коробка с подарком"
+          style="border-radius: 138px; float: left;"
+        />
 
-        <img src="./images/present.png" alt="Коробка с подарком" style="position: absolute; top: 21px; left: 139px; border-radius: 138px;">
-        
-        <div style="position: absolute; top: 201px; left: 487px;">
-            <h2 class="title1" style="color: white;">Подарок каждому</h2>
-            <p style="color: white;">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda facere reprehenderit ea error? Reiciendis aspernatur tenetur provident quia, unde vel eos, itaque consequatur, quibusdam doloremque iure cumque. Quia, impedit mollitia!
-                <br>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt aliquam accusantium dolorum quam? Ipsam ratione magnam nostrum doloribus qui distinctio reprehenderit eum ea repudiandae alias cupiditate, culpa harum optio rerum!
-                <br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat recusandae, neque ratione consequatur perspiciatis reiciendis dolore ab magnam minima quam odio sequi vel et impedit perferendis aliquam! Temporibus, accusamus earum?
-            </p>
-            <button>Получить подарок</button>
+        <div>
+          <h2 class="title1" style="color: white">Подарок каждому</h2>
+          <p style="color: white">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda
+            facere reprehenderit ea error? Reiciendis aspernatur tenetur
+            provident quia, unde vel eos, itaque consequatur, quibusdam
+            doloremque iure cumque. Quia, impedit mollitia!
+            <br />
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt
+            aliquam accusantium dolorum quam? Ipsam ratione magnam nostrum
+            doloribus qui distinctio reprehenderit eum ea repudiandae alias
+            cupiditate, culpa harum optio rerum!
+            <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+            recusandae, neque ratione consequatur perspiciatis reiciendis dolore
+            ab magnam minima quam odio sequi vel et impedit perferendis aliquam!
+            Temporibus, accusamus earum?
+          </p>
+          <button>Получить подарок</button>
         </div>
-    </section>
+      </section>
 
-    <section class="movies">
+      <section class="movies">
         <h2 class="title2">Фильмы</h2>
         <div>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Velit amet dolor sit vel? Dicta similique ullam cupiditate.
-            Harum dignissimos nam perferendis minima, odio saepe officia
-            recusandae asperiores explicabo repellendus necessitatibus!
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit amet
+          dolor sit vel? Dicta similique ullam cupiditate. Harum dignissimos nam
+          perferendis minima, odio saepe officia recusandae asperiores explicabo
+          repellendus necessitatibus!
         </div>
-        <div style="overflow: hidden;">
-            <div style="display: inline-block; background-image: url(./images/revenant.png); width: 284px; height: 284px;">
-                <a href="https://www.kinopoisk.ru/film/522941/" target="_blank" title="Кинопоиск" style="color: white;">
-                    Выживший
-                </a>
-                <p style="color: white;">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Libero aliquam, magni aspernatur officiis impedit quam neque.
-                    Eveniet consectetur sapiente deserunt dolorum qui voluptatum,
-                    mollitia, similique laboriosam numquam harum sit explicabo.
-                </p>
-            </div>
-            <div style="display: inline-block; background-image: url(./images/Лёд.png); width: 284px; height: 284px;">
-                <a href="https://www.kinopoisk.ru/film/900052/" target="_blank" title="Кинопоиск" style="color: white;">
-                    Лёд
-                </a>
-                <p style="color: white;">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Libero aliquam, magni aspernatur officiis impedit quam neque.
-                    Eveniet consectetur sapiente deserunt dolorum qui voluptatum,
-                    mollitia, similique laboriosam numquam harum sit explicabo.
-                </p>
-            </div>
-            <div style="display: inline-block; background-image: url(./images/Martian.png); width: 284px; height: 284px;">
-                <a href="https://www.kinopoisk.ru/film/841700/" target="_blank" title="Кинопоиск" style="color: white;">
-                    Марсианин
-                </a>
-                <p style="color: white;">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Libero aliquam, magni aspernatur officiis impedit quam neque.
-                    Eveniet consectetur sapiente deserunt dolorum qui voluptatum,
-                    mollitia, similique laboriosam numquam harum sit explicabo.
-                </p>
-            </div>
+        <div style="overflow: hidden">
+          <div
+            style="
+              display: inline-block;
+              background-image: url(./images/revenant.png);
+              width: 284px;
+              height: 284px;
+            "
+          >
+            <a
+              href="https://www.kinopoisk.ru/film/522941/"
+              target="_blank"
+              title="Кинопоиск"
+              style="color: white"
+            >
+              Выживший
+            </a>
+            <p style="color: white">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+              aliquam, magni aspernatur officiis impedit quam neque. Eveniet
+              consectetur sapiente deserunt dolorum qui voluptatum, mollitia,
+              similique laboriosam numquam harum sit explicabo.
+            </p>
+          </div>
+          <div
+            style="
+              display: inline-block;
+              background-image: url(./images/Лёд.png);
+              width: 284px;
+              height: 284px;
+            "
+          >
+            <a
+              href="https://www.kinopoisk.ru/film/900052/"
+              target="_blank"
+              title="Кинопоиск"
+              style="color: white"
+            >
+              Лёд
+            </a>
+            <p style="color: white">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+              aliquam, magni aspernatur officiis impedit quam neque. Eveniet
+              consectetur sapiente deserunt dolorum qui voluptatum, mollitia,
+              similique laboriosam numquam harum sit explicabo.
+            </p>
+          </div>
+          <div
+            style="
+              display: inline-block;
+              background-image: url(./images/Martian.png);
+              width: 284px;
+              height: 284px;
+            "
+          >
+            <a
+              href="https://www.kinopoisk.ru/film/841700/"
+              target="_blank"
+              title="Кинопоиск"
+              style="color: white"
+            >
+              Марсианин
+            </a>
+            <p style="color: white">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+              aliquam, magni aspernatur officiis impedit quam neque. Eveniet
+              consectetur sapiente deserunt dolorum qui voluptatum, mollitia,
+              similique laboriosam numquam harum sit explicabo.
+            </p>
+          </div>
         </div>
         <div>
-            <div style="display: inline-block; background-image: url(./images/Спутник.png); width: 284px; height: 284px;">
-                <a href="https://www.kinopoisk.ru/film/1162604/" target="_blank" title="Кинопоиск" style="color: white;">
-                    Спутник
-                </a>
-                <p style="color: white;">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Libero aliquam, magni aspernatur officiis impedit quam neque.
-                    Eveniet consectetur sapiente deserunt dolorum qui voluptatum,
-                    mollitia, similique laboriosam numquam harum sit explicabo.
-                </p>
-            </div>
-            <div style="display: inline-block; background-image: url(./images/Калашников.png); width: 284px; height: 284px;">
-                <a href="https://www.kinopoisk.ru/film/1188248/" target="_blank" title="Кинопоиск" style="color: white;">
-                    Калашников
-                </a>
-                <p style="color: white;">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Libero aliquam, magni aspernatur officiis impedit quam neque.
-                    Eveniet consectetur sapiente deserunt dolorum qui voluptatum,
-                    mollitia, similique laboriosam numquam harum sit explicabo.
-                </p>
-            </div>
-            <div style="display: inline-block; background-image: url(./images/Территория.png); width: 284px; height: 284px;">
-                <a href="https://www.kinopoisk.ru/film/1188248/" target="_blank" title="Кинопоиск" style="color: white;">
-                    Территория
-                </a>
-                <p style="color: white;">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Libero aliquam, magni aspernatur officiis impedit quam neque.
-                    Eveniet consectetur sapiente deserunt dolorum qui voluptatum,
-                    mollitia, similique laboriosam numquam harum sit explicabo.
-                </p>
-            </div>
+          <div
+            style="
+              display: inline-block;
+              background-image: url(./images/Спутник.png);
+              width: 284px;
+              height: 284px;
+            "
+          >
+            <a
+              href="https://www.kinopoisk.ru/film/1162604/"
+              target="_blank"
+              title="Кинопоиск"
+              style="color: white"
+            >
+              Спутник
+            </a>
+            <p style="color: white">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+              aliquam, magni aspernatur officiis impedit quam neque. Eveniet
+              consectetur sapiente deserunt dolorum qui voluptatum, mollitia,
+              similique laboriosam numquam harum sit explicabo.
+            </p>
+          </div>
+          <div
+            style="
+              display: inline-block;
+              background-image: url(./images/Калашников.png);
+              width: 284px;
+              height: 284px;
+            "
+          >
+            <a
+              href="https://www.kinopoisk.ru/film/1188248/"
+              target="_blank"
+              title="Кинопоиск"
+              style="color: white"
+            >
+              Калашников
+            </a>
+            <p style="color: white">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+              aliquam, magni aspernatur officiis impedit quam neque. Eveniet
+              consectetur sapiente deserunt dolorum qui voluptatum, mollitia,
+              similique laboriosam numquam harum sit explicabo.
+            </p>
+          </div>
+          <div
+            style="
+              display: inline-block;
+              background-image: url(./images/Территория.png);
+              width: 284px;
+              height: 284px;
+            "
+          >
+            <a
+              href="https://www.kinopoisk.ru/film/1188248/"
+              target="_blank"
+              title="Кинопоиск"
+              style="color: white"
+            >
+              Территория
+            </a>
+            <p style="color: white">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+              aliquam, magni aspernatur officiis impedit quam neque. Eveniet
+              consectetur sapiente deserunt dolorum qui voluptatum, mollitia,
+              similique laboriosam numquam harum sit explicabo.
+            </p>
+          </div>
         </div>
         <div>
-            <div style="display: inline-block; background-image: url(./images/inception.png); width: 284px; height: 284px;">
-                <a href="https://www.kinopoisk.ru/film/447301/" target="_blank" title="Кинопоиск" style="color: white;">
-                    Начало
-                </a>
-                <p style="color: white;">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Libero aliquam, magni aspernatur officiis impedit quam neque.
-                    Eveniet consectetur sapiente deserunt dolorum qui voluptatum,
-                    mollitia, similique laboriosam numquam harum sit explicabo.
-                </p>
-            </div>
-            <div style="display: inline-block; background-image: url(./images/moonlight.png); width: 284px; height: 284px;">
-                <a href="https://www.kinopoisk.ru/film/939981/" target="_blank" title="Кинопоиск" style="color: white;">
-                    Лунный свет
-                </a>
-                <p style="color: white;">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Libero aliquam, magni aspernatur officiis impedit quam neque.
-                    Eveniet consectetur sapiente deserunt dolorum qui voluptatum,
-                    mollitia, similique laboriosam numquam harum sit explicabo.
-                </p>
-            </div>
-            <div style="display: inline-block; background-image: url(./images/life.png); width: 284px; height: 284px;">
-                <a href="https://www.kinopoisk.ru/film/966995/" target="_blank" title="Кинопоиск" style="color: white;">
-                    Живое
-                </a>
-                <p style="color: white;">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Libero aliquam, magni aspernatur officiis impedit quam neque.
-                    Eveniet consectetur sapiente deserunt dolorum qui voluptatum,
-                    mollitia, similique laboriosam numquam harum sit explicabo.
-                </p>
-            </div>
+          <div
+            style="
+              display: inline-block;
+              background-image: url(./images/inception.png);
+              width: 284px;
+              height: 284px;
+            "
+          >
+            <a
+              href="https://www.kinopoisk.ru/film/447301/"
+              target="_blank"
+              title="Кинопоиск"
+              style="color: white"
+            >
+              Начало
+            </a>
+            <p style="color: white">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+              aliquam, magni aspernatur officiis impedit quam neque. Eveniet
+              consectetur sapiente deserunt dolorum qui voluptatum, mollitia,
+              similique laboriosam numquam harum sit explicabo.
+            </p>
+          </div>
+          <div
+            style="
+              display: inline-block;
+              background-image: url(./images/moonlight.png);
+              width: 284px;
+              height: 284px;
+            "
+          >
+            <a
+              href="https://www.kinopoisk.ru/film/939981/"
+              target="_blank"
+              title="Кинопоиск"
+              style="color: white"
+            >
+              Лунный свет
+            </a>
+            <p style="color: white">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+              aliquam, magni aspernatur officiis impedit quam neque. Eveniet
+              consectetur sapiente deserunt dolorum qui voluptatum, mollitia,
+              similique laboriosam numquam harum sit explicabo.
+            </p>
+          </div>
+          <div
+            style="
+              display: inline-block;
+              background-image: url(./images/life.png);
+              width: 284px;
+              height: 284px;
+            "
+          >
+            <a
+              href="https://www.kinopoisk.ru/film/966995/"
+              target="_blank"
+              title="Кинопоиск"
+              style="color: white"
+            >
+              Живое
+            </a>
+            <p style="color: white">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+              aliquam, magni aspernatur officiis impedit quam neque. Eveniet
+              consectetur sapiente deserunt dolorum qui voluptatum, mollitia,
+              similique laboriosam numquam harum sit explicabo.
+            </p>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section class="goods">
+      <section class="goods">
         <a name="goods">
-            <h2 class="title2">Товары</h2>
+          <h2 class="title2">Товары</h2>
         </a>
         <div>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Placeat qui consequatur ex minus praesentium, illo,
-            optio inventore obcaecati earum ipsum incidunt doloribus
-            quasi voluptate corporis soluta, et facere quae nulla!
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat qui
+          consequatur ex minus praesentium, illo, optio inventore obcaecati
+          earum ipsum incidunt doloribus quasi voluptate corporis soluta, et
+          facere quae nulla!
         </div>
 
-        <div style="overflow: hidden;">
-            <div style="display: inline-block; background-image: url(./images/coca-cola.png); width: 245px; height: 331px;">
-                <h5 style="color: white;">Coca-cola</h5>
-            </div>
-    
-            <div style="display: inline-block; background-image: url(./images/trinket.png); width: 245px; height: 331px;">
-                <h5 style="color: white;">Брелок "Железный человек"</h5>
-            </div>
-    
-            <div style="display: inline-block; background-image: url(./images/poster.png); width: 245px; height: 331px;">
-                <h5 style="color: white;">Постер "Мстители"</h5>
-            </div>
-        </div>
-    </section>
+        <div style="overflow: hidden">
+          <div
+            style="
+              display: inline-block;
+              background-image: url(./images/coca-cola.png);
+              width: 245px;
+              height: 331px;
+            "
+          >
+            <h5 style="color: white">Coca-cola</h5>
+          </div>
 
-    <section class="feedback" style="background-image: url(./images/movie_clapper.png); background-repeat: no-repeat; height: 792px; position: relative;">
+          <div
+            style="
+              display: inline-block;
+              background-image: url(./images/trinket.png);
+              width: 245px;
+              height: 331px;
+            "
+          >
+            <h5 style="color: white">Брелок "Железный человек"</h5>
+          </div>
+
+          <div
+            style="
+              display: inline-block;
+              background-image: url(./images/poster.png);
+              width: 245px;
+              height: 331px;
+            "
+          >
+            <h5 style="color: white">Постер "Мстители"</h5>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="feedback"
+        style="
+          background-image: url(./images/movie_clapper.png);
+          background-repeat: no-repeat;
+          height: 792px;
+          position: relative;
+        "
+      >
         <a name="feedback">
-            <h2 class="title2">Отзывы</h2>
+          <h2 class="title2">Отзывы</h2>
         </a>
         <div>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Exercitationem nihil perspiciatis laborum neque assumenda.
-            Iusto possimus cum similique sint tempora quis sapiente,
-            voluptate obcaecati nesciunt neque nulla quia, nihil voluptatum.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Exercitationem nihil perspiciatis laborum neque assumenda. Iusto
+          possimus cum similique sint tempora quis sapiente, voluptate obcaecati
+          nesciunt neque nulla quia, nihil voluptatum.
         </div>
-        
+
         <div id="container">
-            <div class="carousel" style="overflow: hidden; position: absolute; top: 317px; left: 142.32px" >
-                <div style="display: inline-block; background: #97B13C; width: 245px; height: 284px;">
-                    <img src="./images/customer1.png" alt="Фото посетителя">
-                    <h5>Елена Еленова</h5>
-                    <q style="color: white; font-size: 11px">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quisquam tenetur voluptatibus pariatur modi fuga,
-                        illum ut nihil. Harum debitis sint culpa dolores eveniet.
-                        Tenetur quaerat vel sequi odit dolorem quia.
-                    </q><br>
-                    <p style="color: white; font-size: 9px;">13.20.2020</p>
-                </div>
-
-                <div style="display: inline-block; background: #97B13C; width: 245px; height: 332px;">
-                    <img src="./images/customer2.png" alt="Фото посетителя">
-                    <h5>Борис Борисов</h5>
-                    <q style="color: white; font-size: 11px">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quisquam tenetur voluptatibus pariatur modi fuga,
-                        illum ut nihil. Harum debitis sint culpa dolores eveniet.
-                        Tenetur quaerat vel sequi odit dolorem quia.
-                    </q><br>
-                    <p style="color: white; font-size: 9px;">13.20.2020</p>
-                </div>
-
-                <div style="display: inline-block; background: #97B13C; width: 245px; height: 284px;">
-                    <img src="./images/customer3.png" alt="Фото посетителя">
-                    <h5>Леонардо ДиКаприо</h5>
-                    <q style="color: white; font-size: 11px">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quisquam tenetur voluptatibus pariatur modi fuga,
-                        illum ut nihil. Harum debitis sint culpa dolores eveniet.
-                        Tenetur quaerat vel sequi odit dolorem quia.
-                    </q><br>
-                    <p style="color: white; font-size: 9px;">13.20.2020</p>
-                </div>
+          <div
+            class="carousel"
+            style="
+              overflow: hidden;
+              position: absolute;
+              top: 317px;
+              left: 142.32px;
+            "
+          >
+            <div
+              style="
+                display: inline-block;
+                background: #97b13c;
+                width: 245px;
+                height: 284px;
+              "
+            >
+              <img src="./images/customer1.png" alt="Фото посетителя" />
+              <h5>Елена Еленова</h5>
+              <q style="color: white; font-size: 11px">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam tenetur voluptatibus pariatur modi fuga, illum ut
+                nihil. Harum debitis sint culpa dolores eveniet. Tenetur quaerat
+                vel sequi odit dolorem quia. </q
+              ><br />
+              <p style="color: white; font-size: 9px">13.20.2020</p>
             </div>
-        </div>
-    </section>
 
-    <section class="feedback-form" style="padding-left: 174px; padding-right: 174px;">
+            <div
+              style="
+                display: inline-block;
+                background: #97b13c;
+                width: 245px;
+                height: 332px;
+              "
+            >
+              <img src="./images/customer2.png" alt="Фото посетителя" />
+              <h5>Борис Борисов</h5>
+              <q style="color: white; font-size: 11px">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam tenetur voluptatibus pariatur modi fuga, illum ut
+                nihil. Harum debitis sint culpa dolores eveniet. Tenetur quaerat
+                vel sequi odit dolorem quia. </q
+              ><br />
+              <p style="color: white; font-size: 9px">13.20.2020</p>
+            </div>
+
+            <div
+              style="
+                display: inline-block;
+                background: #97b13c;
+                width: 245px;
+                height: 284px;
+              "
+            >
+              <img src="./images/customer3.png" alt="Фото посетителя" />
+              <h5>Леонардо ДиКаприо</h5>
+              <q style="color: white; font-size: 11px">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam tenetur voluptatibus pariatur modi fuga, illum ut
+                nihil. Harum debitis sint culpa dolores eveniet. Tenetur quaerat
+                vel sequi odit dolorem quia. </q
+              ><br />
+              <p style="color: white; font-size: 9px">13.20.2020</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="feedback-form"
+        style="padding-left: 174px; padding-right: 174px"
+      >
         <div class="feedback-form-block">
-            <form action="/order" id="feedback-form" style="padding-left: 381px;">
-                <h3 class="title3">Обратная связь</h3>
-                <div>
-                    <input type="text" placeholder="Полное имя" name="fullname" required>
-                </div>
-                <div>
-                    <input type="email" name="mail" id="mail" placeholder="email" required>
-                </div>
-                <div>
-                    <select name="seat" required>
-                        <option value="0">Номер места</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                    </select>
-                </div>
-                <div>
-                    <input type="textarea" placeholder="Напишите свой отзыв" name="feed" style="height: 120px;">
-                </div>
-                <div>
-                    <input type="checkbox" name="agree" id="checkbox" required>
-                    <label for="checkbox">Я согласен на обработку персональных данных</label>
-                </div>
-                <div>
-                    <input type="file" name="input file" id="input-file">
-                </div>
-                <div>
-                    <button type="submit">Заказать</button>
-                </div>
-            </form>
+          <form action="/order" id="feedback-form" style="padding-left: 381px">
+            <h3 class="title3">Обратная связь</h3>
+            <div>
+              <input
+                type="text"
+                placeholder="Полное имя"
+                name="fullname"
+                required
+              />
+            </div>
+            <div>
+              <input
+                type="email"
+                name="mail"
+                id="mail"
+                placeholder="email"
+                required
+              />
+            </div>
+            <div>
+              <select name="seat" required>
+                <option value="0">Номер места</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+            <div>
+              <input
+                type="textarea"
+                placeholder="Напишите свой отзыв"
+                name="feed"
+                style="height: 120px"
+              />
+            </div>
+            <div>
+              <input type="checkbox" name="agree" id="checkbox" required />
+              <label for="checkbox"
+                >Я согласен на обработку персональных данных</label
+              >
+            </div>
+            <div>
+              <input type="file" name="input file" id="input-file" />
+            </div>
+            <div>
+              <button type="submit">Заказать</button>
+            </div>
+          </form>
         </div>
-    </section>
+      </section>
 
-    <footer class="footer">
-        <img src="./images/map.png" alt="Как добраться" style="left: 65px">
-        <div style="background-color: #A3CC40; overflow: hidden;">
-            <div style="display: inline-block; width: 269px; height: 154px;">
-                <a href="https://innopolis.university/" target="_blank"><img src="./images/logo.svg" alt="Logo Innopolis University"></a><br>
-                <p style="color: white;">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Neque animi quod asperiores obcaecati, tempore soluta natus,
-                    minima inventore ut, quis ullam aperiam.
-                    Harum omnis vel hic facere quas exercitationem provident.
-                </p>
-                <a href="#"><img src="./images/instagram_logo.svg" alt="Логотип instagram"></a>
-                <a href="#"><img src="./images/linkedin_logo.svg" alt="Логотип linkedin"></a>
-                <a href="#"><img src="./images/twitter_logo.svg" alt="Логотип twitter"></a>
-                <a href="#"><img src="./images/youtube_logo.svg" alt="Логотип youtube"></a>
-                <a href="#"><img src="./images/facebook_logo.svg" alt="Логотип facebook"></a>
-            </div>
+      <footer class="footer">
+        <img src="./images/map.png" alt="Как добраться" style="left: 65px" />
+        <div style="background-color: #a3cc40; overflow: hidden">
+          <div style="display: inline-block; width: 269px; height: 154px">
+            <a href="https://innopolis.university/" target="_blank"
+              ><img
+                src="./images/logo.svg"
+                alt="Logo Innopolis University" /></a
+            ><br />
+            <p style="color: white">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+              animi quod asperiores obcaecati, tempore soluta natus, minima
+              inventore ut, quis ullam aperiam. Harum omnis vel hic facere quas
+              exercitationem provident.
+            </p>
+            <a href="#"
+              ><img src="./images/instagram_logo.svg" alt="Логотип instagram"
+            /></a>
+            <a href="#"
+              ><img src="./images/linkedin_logo.svg" alt="Логотип linkedin"
+            /></a>
+            <a href="#"
+              ><img src="./images/twitter_logo.svg" alt="Логотип twitter"
+            /></a>
+            <a href="#"
+              ><img src="./images/youtube_logo.svg" alt="Логотип youtube"
+            /></a>
+            <a href="#"
+              ><img src="./images/facebook_logo.svg" alt="Логотип facebook"
+            /></a>
+          </div>
 
-            <div style="display: inline-block; width: 269px; height: 154px;">
-                <h6 style="color: white;">SITE</h6>
-                <ul class="site-list">
-                    <li class="site-list__item"><a href="#about">Почему мы</a></li>
-                    <li class="site-list__item"><a href="#schedule">Расписание</a></li>
-                    <li class="site-list__item"><a href="#goods">Наши товары</a></li>
-                    <li class="site-list__item"><a href="#feedback">Отзывы</a></li>
-                    <li class="site-list__item"><a href="#contact">Контакты</a></li>
-                </ul>
-            </div>
+          <div style="display: inline-block; width: 269px; height: 154px">
+            <h6 style="color: white">SITE</h6>
+            <ul class="site-list">
+              <li class="site-list__item"><a href="#about">Почему мы</a></li>
+              <li class="site-list__item">
+                <a href="#schedule">Расписание</a>
+              </li>
+              <li class="site-list__item"><a href="#goods">Наши товары</a></li>
+              <li class="site-list__item"><a href="#feedback">Отзывы</a></li>
+              <li class="site-list__item"><a href="#contact">Контакты</a></li>
+            </ul>
+          </div>
 
-            <div  style="display: inline-block; width: 269px; height: 154px;">
-                <a name="contact">
-                    <h6 style="color: white;">CONTACT</h6>
-                </a>
-                <ul class="site-list">
-                    <li class="site-list__item"><a href="tel:+78003551256">+7 (800) 355 12 56</a></li>
-                    <li class="site-list__item"><a href="mailto:kino@innopolis.ru">kino@innopolis.ru</a></li>
-                    <li class="site-list__item">420500, г. Иннополис ул.Университетская, д.1</li>
-                    <li class="site-list__item"><a href="#">Как добраться</a></li>
-                    <li class="site-list__item"><a href="#">Все контакты</a></li>
-                </ul>
-            </div>
-            <p style="color: white;">Copyright @ 2020 Innopolis University. All Rights Reserved.</p>
+          <div style="display: inline-block; width: 269px; height: 154px">
+            <a name="contact">
+              <h6 style="color: white">CONTACT</h6>
+            </a>
+            <ul class="site-list">
+              <li class="site-list__item">
+                <a href="tel:+78003551256">+7 (800) 355 12 56</a>
+              </li>
+              <li class="site-list__item">
+                <a href="mailto:kino@innopolis.ru">kino@innopolis.ru</a>
+              </li>
+              <li class="site-list__item">
+                420500, г. Иннополис ул.Университетская, д.1
+              </li>
+              <li class="site-list__item"><a href="#">Как добраться</a></li>
+              <li class="site-list__item"><a href="#">Все контакты</a></li>
+            </ul>
+          </div>
+          <p style="color: white">
+            Copyright @ 2020 Innopolis University. All Rights Reserved.
+          </p>
         </div>
-    </footer>
-</body>
-
+      </footer>
+    </div>
+  </body>
 </html>
