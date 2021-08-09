@@ -100,17 +100,18 @@ body {
 
 .wellcome-block {
   position: absolute;
+  box-sizing: border-box;
   width: 426px;
   left: 563px;
   top: 564px;
+  padding: 30px 47px 20px 47px;
   background: white;
   box-shadow: 0px 27px 39px rgba(163, 204, 64, 0.18);
   border-radius: 10px;
 }
 
 .wellcome-block__title {
-    margin-top: 30px;
-    padding: 0px 47px 0px 47px;
+    margin-top: 0;
     color: #333333;
     font-weight: 600;
     font-size: 33px;
@@ -118,8 +119,6 @@ body {
 }
 
 .wellcome-block__p1 {
-    padding-left: 47px;
-    padding-right: 47px;
     color: #333333;
     font-weight: 400;
     font-size: 11px;
